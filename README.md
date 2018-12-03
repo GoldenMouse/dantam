@@ -1,5 +1,7 @@
 # blameless
 
+A Hair and Makeup portfolio website written with VueJS
+
 ## Project setup
 ```
 npm install
