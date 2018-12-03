@@ -1,21 +1,22 @@
 <template>
-<div class="nav-bar">
+<div :class="{ 'nav-bar': true, sticky: stickied }">
     <div class="container">
-        <div class="nav-right">
+        <div class="nav-left">
             <ul>
-                <li><a href="#" class="is-active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><router-link :to="{ name: 'home' }">Home</router-link></li>
+                <li><router-link :to="{ name: 'about' }">About</router-link></li>
+                <li><router-link :to="{ name: 'services' }">Services</router-link></li>
             </ul>
         </div>
         <div class="brand">
-            <h1>Dan Tam </h1>
+            <h1 :class="{ sticky: stickied }" @click="$router.push({ name: 'home' })">[ DanTam Beauty ]</h1>
+            <!-- <img src="@/assets/logo-1x.png" alt="main logo" /> -->
         </div>
-        <div class="nav-left">
+        <div class="nav-right">
             <ul>
-                <li><a href="#">Gallery</a></li>
+                <li><router-link :to="{ name: 'portfolio' }">Portfolio</router-link></li>
+                <li><router-link :to="{ name: 'contactus' }">Contact</router-link></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -24,24 +25,69 @@
 
 <script>
 export default {
-    name: 'NavBar'
+    name: 'NavBar',
+    data() {
+        return {
+            stickied: false
+        }
+    },
+    methods: {
+        scrollTo(anchor) {
+            let target = document.getElementById(anchor)
+            if (target) target.scrollIntoView(true)
+        }
+    },
+    created() {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                this.stickied = true 
+            } else {
+                this.stickied = false 
+            }
+        })
+    }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+
 .nav-bar {
     display: flex;
     flex-direction: space-between;
-    padding: 0.5rem 0;
+    padding: 1rem 2rem;
     font-size: 1rem;
     letter-spacing: 0.05em;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
-ul li {
+.nav-bar .container {
+    justify-content: space-between;
+}
+
+.nav-bar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0.5px 0.5px 0.5px #888888;
+    z-index: 10;
+    padding: 0.3rem 2rem;
+
+    & + .content {
+        padding-top: 5rem;
+    }
+}
+
+.nav-bar .brand > h1.sticky {
+    font-size: 1.8rem ;
+}
+
+
+.nav-bar ul li {
    display: inline-block; 
-   padding: 0 3rem;
+   padding: 0 1.8vw;
 
    &:first-child {
        padding-left: 0;
@@ -51,14 +97,37 @@ ul li {
    }
 }
 
-.brand {
-    margin: 0 auto;
-    text-transform: uppercase;
+.nav-bar .brand {
+    z-index: 2;
+    flex-basis: 0 0 100px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+
+    & h1 {
+        font-family: 'Countryside', 'serif';
+        // font-family: 'Countryside', 'serif';
+        font-size: 2rem;
+        // color: #ff9f80;
+        color: var(--color-primary-darken);
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: inline-block;
+        line-height: 1.9;
+        transition: font-size 0.3s;
+        // letter-spacing: -0.1rem;
+
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-a {
-    padding-bottom: 0.2rem;
-    border-bottom: 2px solid #fff;
+.nav-bar a {
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #fff;
     position: relative;
 
     &:hover:after {
@@ -77,8 +146,8 @@ a {
     }
 }
 
-.is-active {
-    padding-bottom: 4px;
+.nav-bar .router-link-exact-active {
+    padding-bottom: 0.4rem;
     border-bottom: 2px solid var(--color-primary);
 
     &:hover:after {
@@ -86,8 +155,8 @@ a {
     }
 }
 
-
-
-//border-bottom: 2px solid var(--color-primary);
+.nav-bar a {
+    cursor: pointer;
+}
  
 </style>

@@ -29,35 +29,37 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .contact-bar {
     background-color: var(--color-primary);
+    padding: 0 2rem;
+    transition: all 0.2s;
 }
 
-.container {
+.contact-bar .container {
      padding: 0.7rem 0;
+     justify-content: flex-start;
+     position: relative;
 }
 
-li {
+.contact-bar li {
     display: inline-block;
-    padding: 0 0.8rem;
 }
 
 
-.contact-info {
+.contact-bar .contact-info {
     font-size: 14px;
     display: flex;
 
     & > div {
-        margin-right: 5rem;
 
         & span:first-child {
             font-weight: 700;
         }
     }
 
-    a {
+    & a {
         color: var(--font-color);
 
         &:hover {
@@ -66,11 +68,17 @@ li {
     }
 } 
 
-.social {
-    margin-left: auto;
+.contact-bar .telephone {
+    margin-right: 5rem;
+}
+
+.contact-bar .social {
+    position: absolute;
+    right: 0;
 
     & a {
         color: rgba(21, 21, 21, 0.3);
+        padding: 0 0.8rem;
 
         &:hover {
             color: white;

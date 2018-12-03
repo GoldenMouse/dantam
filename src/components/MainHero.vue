@@ -1,132 +1,198 @@
 <template>
 <div class="main-hero">
-    <div class="container">
-        <carousel :items="1" :nav="false" :animateOut="fadeOut">
+    <agile :options="agileOptions" :speed=600 :autoplaySpeed=6000>
         <div class="slide">
-            <div class="left">
-                <h1>Blameless Nail Salon Creating Beauty</h1>
-                <div class="divider"></div>
-                <p>Our Our Nail Salon brings unique and 
-                   custom nail designs to all customers of LA area. 
-                   We are a team of nail artists specializing on complete nail care.
-                </p>
-                <button class="btn-solid">Read More</button>
+            <!--
+            <div class="slide--caption">
+                <div class="container">
+                    <h1>Creating Beauty With Every Touch</h1>
+                    <div class="divider"></div>
+                    <p>Excepteur in est quis cupidatat enim laboris ea nisi. Nulla et aute sint aute qui ad. Dolore laboris incididunt sit ipsum velit. </p>
+                </div>
             </div>
-
-            <div class="right">
-            </div>
+            -->
+            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/main-hero-2.jpg') + ')'}"></div>
         </div>
 
         <div class="slide">
-            <div class="left">
-                <h1>Be Different with Our Nail Design</h1>
-                <div class="divider"></div>
-                <p>
-                    Our qualified team provides a full range of nail design services 
-                    to satisfy even the most demanding clients.
-                </p>
-                <button class="btn-solid">Read More</button>
-            </div>
-
-            <div class="right">
-            </div>
+            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/main-hero-1.jpg') + ')'}"></div>
         </div>
 
         <div class="slide">
-            <div class="left">
-                <h1>Better Nail Care for Your Pleasure</h1>
-                <div class="divider"></div>
-                <p>
-                    We are dedicated to bring you the best nail care services 
-                    combined with expert techniques used in the nail salon industry.
-                </p>
-                <button class="btn-solid">Read More</button>
-            </div>
-
-            <div class="right">
-            </div>
+            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/main-hero-3.jpg') + ')'}"></div>
         </div>
-        </carousel>
-
-    </div>
-    <img src="@/assets/hands.png" class="overlay-image"/>
+    </agile>
 </div>
 </template>
 
 <script>
-import carousel from 'v-owl-carousel'
 export default {
     name: 'MainHero',
+    data() {
+        return {
+          agileOptions: {
+              arrows: false,
+              dots: true,
+              fade: false,
+              infinite: true,
+              autoplay: true,
+              pauseOnHover: false,
+              pauseOnDotsHover: true,
+          }
+      }
+    },
     components: {
-        carousel
     }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .main-hero {
-    background-color: #f1f1f1;
-    background-image: url('../assets/paint-background.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 5rem 0;
+    background-color: white;
     position: relative;
-    height: 65vh;
-}
-
-h1 {
-    font-size: 3rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-}
-
-p {
-    font-size: 1.1em;
-    color: var(--font-color-light);
-    font-weight: 500;
-    padding: 2rem 0;
-}
-
-.divider:after{
-    content: '';
-    display: inline-block;
-    width: 90px;
-    height: 3px;
-    background-color: var(--color-primary);
-}
-
-.slide {
     display: flex;
-    position: relative;
-    height: 100%;
+
+    & .divider {
+        margin-top: 1rem;
+    }
+
+    & p {
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    & .button {
+        margin: 1rem 0;
+    }
+
+    & .agile {
+        display: flex;
+        width: 100%;
+
+        &__list {
+            display: flex;
+            width: 100%;
+        }
+        &__track {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+        &__dots {
+            bottom: 3rem;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+        }
+
+        &__dot {
+            button {
+                margin: 0.2rem;
+                width: 1rem; 
+                height: 1rem; 
+                border-radius: 50%;
+                border: 2px solid var(--color-bg-gray);
+                background-color: var(--color-bg-gray);
+                transition: all 0.2s;
+
+                &:hover {
+                    background-color: var(--color-primary);
+                    border-color: var(--color-primary)
+                }
+            }
+
+            &--current {
+                button {
+                    background-color: var(--color-primary);
+                    border-color: var(--color-primary);
+                }
+            }
+        }
+
+        &__arrow {
+            height: 100%;
+            top: 0;
+            width: 20px;
+
+            &:hover {
+                background-color: rgba(#000, .5);
+
+                #arrow-svg {
+                    fill: #fff;
+                }
+            }
+
+            &[disabled] {
+                display: none;
+            }
+
+            #arrow-svg {
+                fill: rgba(#fff, .4);
+                height: 25px;
+            }
+        }
+    }
+
+    & .slide {
+        flex: 1;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        &--main {
+            flex: 1;
+            background-position: 50% 40%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &--caption {
+            width: 25%;
+            position: absolute;
+            left: 1rem;
+            top: 3rem;
+            height: 15rem;
+            background: none;
+            border-radius: 1rem;
+            flex: 1;
+            padding: 2rem;
+            justify-content: flex-start;
+            background: none;
+            z-index: 2;
+
+
+            & .container {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0;
+            }
+            & .divider {
+                align-self: right;
+                margin: 0;
+                &:after{ width: 8rem;}
+            }
+            & p {
+                font-size: 1rem;
+                // color: var(--font-color-primary);
+                color: white;
+                font-weight: 500;
+            }
+            & h1{
+                color: white;
+                font-size: 1.4rem;
+            }
+        }
+        &:nth-child(1) .slide--caption {
+            top: 9rem !important;
+        }
+        .overlay-image {
+            position: absolute;
+            right: 15%;
+            bottom: 0;
+            width: 25rem;
+        }
+    }
 }
 
-.left,
-.right {
-    width: 50%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.left {
-    padding-left: 1rem;
-}
-
-.overlay-image {
-    position: absolute;
-    right: 20%;
-    bottom: 0;
-    width: 300px;
-}
-
-.owl-dot {
-    color: blue;
-}
-
- 
 </style>

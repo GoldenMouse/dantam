@@ -1,22 +1,39 @@
 <template>
-  <div class="home">
-    <ContactBar/> 
-    <NavBar/> 
+<div class="home">
+    
     <MainHero/>
-  </div>
+
+</div>
 </template>
 
 <script>
-import ContactBar from '@/components/ContactBar'
-import NavBar from '@/components/NavBar'
 import MainHero from '@/components/MainHero'
 
 export default {
   name: 'home',
   components: {
-    ContactBar,
-    NavBar,
-    MainHero
-  }
+    MainHero,
+  },
+  methods: {
+      clicker() {
+      }
+  },
 }
 </script>
+
+<style lang="scss">
+.home {
+    display: flex;
+    flex-direction: column;
+
+    & .main-hero {
+        flex: 1 1 auto;
+    }
+
+    & .filler {
+        background-color: lightblue;
+        flex: 1;
+    }
+}
+
+</style>
