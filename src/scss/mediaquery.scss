@@ -106,7 +106,7 @@ MEDIA QUERIES
         width: 16rem;
 
     }
-     .contactus {
+    .contactus {
         p, form {
             width: 90%;
         }
@@ -126,8 +126,18 @@ MEDIA QUERIES
 
 
 @include breakpoint(small) {
+    .nav-bar-mobile .mobile--header {
+        .brand h1 {
+            padding-top: 0.5rem;
+        }
+    }
+
     .about .container {
         padding: 1rem;
+
+        .summary--right p {
+            font-size: 0.8em;
+        }
 
         figure {
             align-items: center;
@@ -160,23 +170,66 @@ MEDIA QUERIES
         }
     }
 
+    .services .service-icons {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: '. s1 .'
+                             '. s2 .'
+                             '. s3 .'
+                             '. s4 .'
+                             '. s5 .'
+                             '. s6 .'
+    }
+    .services .service {
+        border-bottom: 1px solid var(--color-bg-gray-darken); 
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .services .pricing p {
+        width: 85%;
+    }
+    .services .pricing .container {
+        padding: 0;
+    }
+    .services .pricing .container .pricing__table > .left, .right {
+        margin: 0;
+    } 
+
     .portfolio .nav {
-        padding: 0.5rem;
+        padding: 0;
         background: var(--color-bg-gray);
         ul {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: flex-start;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             li {
                 text-align: center;
+                margin: 0
             }
 
             button { 
-                padding: 0.5rem;
+                padding: 1rem 1rem;
+                margin: 0;
+                font-size: 0.7em;
             }
         }
     }
+
+    .contactus {
+        form {
+            width: 100%;
+        }
+        .contact-info .email{
+            padding-right: 1.2rem;
+        }
+        .contact-info > div > p {
+            font-size: 0.9em;
+        }
+    }
+
     .footer .container {
         padding: 0 0.5rem;
 
@@ -192,7 +245,7 @@ MEDIA QUERIES
 @include breakpoint(tiny) {
     .nav-bar-mobile .mobile--header {
         .brand h1 {
-            font-size: 1.2em;
+            font-size: 1.3em;
         }
         .fa-ellipsis-v {
             font-size: 1.2em;

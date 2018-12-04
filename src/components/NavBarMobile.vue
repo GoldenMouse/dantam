@@ -18,7 +18,7 @@
             <li><router-link :to="{ name: 'services' }" @click.native="toggleNav">Services</router-link></li>
             <li><router-link :to="{ name: 'portfolio' }" @click.native="toggleNav">Portfolio</router-link></li>
             <li><router-link :to="{ name: 'contactus' }" @click.native="toggleNav">Contact</router-link></li>
-            <li><router-link :to="{ name: 'blog' }" @click.native="toggleNav">Contact</router-link></li>
+            <li><router-link :to="{ name: 'blog' }" @click.native="toggleNav">Blog</router-link></li>
         </ul>
     </div>
 
@@ -72,7 +72,8 @@ export default {
     display: none;
 
     & .hamburger {
-        margin-left: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 0.5rem;
     }
 
     & .mobile--header {

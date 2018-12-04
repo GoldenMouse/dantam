@@ -40,7 +40,7 @@ export default {
 }
 
 .back-to-top.active {
-    bottom: 2.5rem;
+    bottom: 3rem;
     animation: slideUp 0.6s ease-in-out;
 }
 
