@@ -2,21 +2,16 @@
 <footer ref="footer" class="footer">
     <div class="container">
         <h4><i class="far fa-copyright"></i> 2018 Privacy Policy</h4>
-        <div class="social">
-            <ul>
-                <li><a href="#" class="fab fa-facebook-f"></a></li>
-                <li><a href="#" class="fab fa-twitter"></a></li>
-                <li><a href="#" class="fab fa-google-plus-g"></a></li>
-                <li><a href="#" class="fab fa-pinterest-p"></a></li>
-            </ul>
-        </div>
+        <social/>
     </div>
 </footer>
 </template>
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    components: {
+    }
 }
 </script>
 

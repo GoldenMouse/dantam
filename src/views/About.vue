@@ -5,7 +5,7 @@
         <div class="container">
             <div class="summary--left">
                 <figure>
-                    <img src="../assets/about-main.jpg" alt="Tam Dan Truong"/>
+                    <img src="../assets/img/about-main-min.jpg" alt="Tam Dan Truong"/>
                     <div class="summary--name">
                         <h2>Dan Tam Truong</h2>
                         <sub>Hair &amp; Makeup Artist</sub>

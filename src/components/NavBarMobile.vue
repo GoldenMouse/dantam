@@ -33,14 +33,7 @@
                 <span>Mn-Fri: 10 am-8 pm</span>
             </div>
         </div>
-        <div class="social">
-            <ul>
-                <li><a href="#" class="fab fa-facebook-f"></a></li>
-                <li><a href="#" class="fab fa-twitter"></a></li>
-                <li><a href="#" class="fab fa-google-plus-g"></a></li>
-                <li><a href="#" class="fab fa-pinterest-p"></a></li>
-            </ul>
-        </div>
+        <social/> 
     </div>
 </div>
 </template>
@@ -62,7 +55,7 @@ export default {
         }
     },
     components: {
-        Hamburger
+        Hamburger,
     }
 }
 </script>

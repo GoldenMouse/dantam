@@ -11,15 +11,15 @@
                 </div>
             </div>
             -->
-            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/main-hero-2.jpg') + ')'}"></div>
+            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/img/main-hero-2-min.jpg') + ')'}"></div>
         </div>
 
         <div class="slide">
-            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/main-hero-1.jpg') + ')'}"></div>
+            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/img/main-hero-1-min.jpg') + ')'}"></div>
         </div>
 
         <div class="slide">
-            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/main-hero-3.jpg') + ')'}"></div>
+            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/img/main-hero-3-min.jpg') + ')'}"></div>
         </div>
     </agile>
 </div>
@@ -96,15 +96,15 @@ export default {
                 transition: all 0.2s;
 
                 &:hover {
-                    background-color: var(--color-primary);
-                    border-color: var(--color-primary)
+                    background-color: var(--color-primary-darken);
+                    border-color: var(--color-primary-darken)
                 }
             }
 
             &--current {
                 button {
-                    background-color: var(--color-primary);
-                    border-color: var(--color-primary);
+                    background-color: var(--color-primary-darken);
+                    border-color: var(--color-primary-darken);
                 }
             }
         }

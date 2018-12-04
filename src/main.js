@@ -5,6 +5,9 @@ import router from './router'
 import VueAgile from 'vue-agile'
 import '@/scss/mediaquery.scss'
 
+import Social from './components/Social.vue'
+
+Vue.component('social', Social)
 Vue.use(VueAgile)
 
 Vue.config.productionTip = false
