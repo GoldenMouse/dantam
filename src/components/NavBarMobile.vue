@@ -76,16 +76,20 @@ export default {
     }
 
     & .mobile--header {
-        z-index: 10;
         width: 100%;
+        height: 4.5rem;
         border-bottom: 1px solid #eaeced;
         background-color: #fff;
         display: flex;
         align-items: center;
+        justify-content: center;
         position: fixed;
         top: 0;
+        z-index: 10;
 
-
+        .brand {
+            margin: 0 auto;
+        }
         & .brand h1 {
             cursor: pointer;
             padding-top: 0.4rem;
@@ -97,7 +101,6 @@ export default {
         }
 
         & .fa-ellipsis-v {
-            margin-left: auto;
             padding: 0 2rem;
             font-size: 1.5rem;
             transition: all 0.35s;
@@ -110,7 +113,7 @@ export default {
     }
 
     & .mobile--menu {
-        z-index: 1;
+        z-index: 9;
         padding-top: 5rem;
         width: 15rem;
         position: fixed;
@@ -145,12 +148,13 @@ export default {
         border: 1px solid #eaeced;
         z-index: 2;
         position: fixed;
-        top: 5.5rem;
+        top: 4.5rem;
         right: 0;
         width: 20rem;
         line-height: 1.7;
+        right: -999px;
         opacity: 0;
-        transition: all 0.35s cubic-bezier(0.65, 0.05, 0.36, 1);
+        transition: opacity 0.35s cubic-bezier(0.65, 0.05, 0.36, 1);
 
         & .contact-info {
              & div span:first-child {
@@ -170,6 +174,7 @@ export default {
 
     & .mobile--small-menu--active {
         opacity: 1;
+        right: 0;
     }
     
 }

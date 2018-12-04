@@ -37,11 +37,14 @@ export default {
             if (target) target.scrollIntoView(true)
         }
     },
-    created() {
+    mounted() {
+        let content = document.querySelector('#content')
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
+            if ( window.innerWidth > 992 && window.scrollY > 50) {
+                content.style.paddingTop = '7rem'
                 this.stickied = true 
             } else {
+                content.style.paddingTop = 0
                 this.stickied = false 
             }
         })
@@ -64,6 +67,7 @@ export default {
 }
 
 .nav-bar .container {
+    padding: 0;
     justify-content: space-between;
 }
 
@@ -71,13 +75,10 @@ export default {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0.5px 0.5px 0.5px #888888;
+    // box-shadow: 0.5px 0.5px 0.5px #888888;
+    border-bottom: 1px solid var(--color-bg-gray);
     z-index: 10;
-    padding: 0.3rem 2rem;
-
-    & + .content {
-        padding-top: 5rem;
-    }
+    padding: 0.5rem 2rem;
 }
 
 .nav-bar .brand > h1.sticky {

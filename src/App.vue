@@ -4,10 +4,11 @@
     <ContactBar/> 
     <NavBarMobile/> 
     <NavBar/> 
-    <div ref="content" class="content">
+    <div ref="content" class="content" id="content">
         <router-view/>
     </div>
     <Footer v-show="$router.currentRoute.name != 'home'"/>
+    <MediaQueries/>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import ContactBar from '@/components/ContactBar'
 import NavBar from '@/components/NavBar'
 import NavBarMobile from '@/components/NavBarMobile'
 import Footer from '@/components/Footer'
+import MediaQueries from '@/components/MediaQueries'
 
 export default {
     name: 'App',
@@ -26,36 +28,15 @@ export default {
         NavBar,
         NavBarMobile,
         Footer,
+        MediaQueries
     },
 }
 </script>
 
 <style lang="scss">
 
-/*********************
-BREAKPOINTS
-*********************/
 
-@mixin breakpoint($point) {
-    @if $point == xlarge {
-        @media (max-width: 1200px) { @content ; }
-    }
-    @else if $point == large {
-        @media (max-width: 992px) { @content ; }
-    }
-    @else if $point == medium {
-        @media (max-width: 768px) { @content ; }
-    }
-    @else if $point == small {
-        @media (max-width: 380px) { @content ; }
-    }
-}
-
-
-/*********************
-MEDIA QUERIES
-*********************/
-
+/***
 @include breakpoint(large) {
     .contact-bar, .nav-bar {
         display: none;
@@ -185,6 +166,8 @@ MEDIA QUERIES
     }
 } 
 
+***/
+
 #app {
     display: flex;
     flex-direction: column;
@@ -212,6 +195,7 @@ MEDIA QUERIES
         flex: 0 0 3rem;
     }
 }
+
 
 :root {
   --color-primary: #ffd8cb;

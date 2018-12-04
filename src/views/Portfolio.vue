@@ -4,13 +4,18 @@
         Laboris aute tempor cupidatat qui velit dolor sint aliquip.Id ut pariatur non est ea nisi incididunt fugiat mollit aliqua in ullamco tempor.'
     </TitleHeader>
 
-    <nav id="scrollHere" class="nav" ref="portfolioNav">
+    <nav id="portfolioNav" :class="{ nav: true, sticky: stickied }" ref="portfolioNav">
         <ul>
             <li v-for="(lnk,index) in navlinks" :key="index">
-                <button @click.prevent="filter('is'+lnk); jumpToNav(); activate(index+1)"
-                        :class="{ active: activeIndex === index+1 }"
+                <router-link 
+                    tag="button"
+                    :to="{ hash: '#isotope', query: { filter: lnk} }"
+                    @click.native.prevent="navBtnAction(lnk, index)" 
+                    :disabled="index+1 === activeIndex"
+                    :class="{ active: activeIndex === index+1 }"
                 >
-                    {{ lnk }}</button>
+                    {{ lnk }}
+                </router-link>
             </li>
         </ul>
     </nav>
@@ -21,7 +26,7 @@
                 :options='isotopeOptions' 
                 :list="images"
                 >
-        <div v-for="(img,index) in images" :key="index" class="item" :data-src="img.url">
+        <div v-for="(img,index) in images" :key="index" :data-src="img.url">
             <img :src="img.thumb" :alt="img.category" />
         </div>
     </isotope>
@@ -47,6 +52,8 @@ export default {
     },
     data() {
         return {
+            stickied: false,
+            navOffset: 0,
             activeIndex: 1,
             navlinks: ['MakeOver', 'Hair', 'Bridal', 'Fashion',],
             filterOption: null,
@@ -70,14 +77,16 @@ export default {
                         return item.category === 'fashion'
                     },
                 },
+                filter: 'isMakeOver'
             },
         }
     },
     methods: {
-        activate(index) {
+        navBtnAction(key, index) {
+            key = 'is' + key
+            index = index + 1
             this.activeIndex = index
-        },
-        filter(key) {
+
             if (this.filterOption == key)  
                 key = null
             this.$refs.isotope.filter(key)
@@ -87,13 +96,23 @@ export default {
             // this.$refs.portfolioNav.scrollIntoView(true)
             this.$router.push({
                 name: 'portfolio',
-                hash: '#scrollHere',
+                hash: '#portfolioNav',
             })
         },
         importAll(r) {
             var imgs = {}
             r.keys().forEach(key => (imgs[key] = r(key)))
             return imgs
+        },
+        stickyNavScroll() {
+            let portfolio = document.querySelector('.portfolio')
+            if (window.scrollY >= 300) {
+                portfolio.style.paddingTop = '8rem'
+                this.stickied = true
+            } else {
+                portfolio.style.paddingTop = 0
+                this.stickied = false
+            }
         }
     },
     computed: {
@@ -116,11 +135,17 @@ export default {
                 })
             }
             return images
-        }
+        },
+        
     },
-    beforeMount() {
+    created() {
+        window.addEventListener('scroll', this.stickyNavScroll)
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.stickyNavScroll)
     },
     mounted() {
+        // Initialize Isotope
         const el = document.querySelector('#isotope')
         window.lightGallery(el, {
             selector: '.item',
@@ -134,6 +159,9 @@ export default {
             getCaptionFromTitleOrAlt: true,
             showThumbByDefault: false,
         })
+
+        // Initialize navOffset
+        this.navOffset = document.querySelector('#portfolioNav').offsetTop
     },
 }
 </script>
@@ -144,6 +172,8 @@ export default {
     flex-direction: column;
     min-height: 80rem;
     align-items: center;
+    padding-bottom: 4rem;
+
     
     img {
         cursor: pointer;
@@ -152,7 +182,21 @@ export default {
     & .container {
         flex-direction: column;
     }
-    
+
+    .nav {
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        // background-color: #edf1f1;
+        background-color: rgba(237, 241, 241, 0.95);
+    }
+    .sticky {
+        position: fixed;
+        top: 4rem;
+        z-index: 1;
+    }
+
     & ul li {
         display: inline-block;
         margin: 0 1.5rem;
@@ -165,7 +209,7 @@ export default {
         }
     }
     & button{
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
         background: none;
         text-transform: uppercase;
         font-weight: 700;
@@ -175,12 +219,12 @@ export default {
         transition: 0.3s;
 
         &:hover {
-            color: var(--color-primary);
+            color: var(--color-primary-darken);
         }
     }
 
     & .active {
-        color: var(--color-primary);
+        color: var(--color-primary-darken);
     }
 
     & .isotope .item{

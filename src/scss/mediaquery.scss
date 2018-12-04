@@ -1,0 +1,149 @@
+/*********************
+BREAKPOINTS
+*********************/
+
+@mixin breakpoint($point) {
+    @if $point == xlarge {
+        @media (max-width: 1200px) { @content ; }
+    }
+    @else if $point == large {
+        @media (max-width: 992px) { @content ; }
+    }
+    @else if $point == medium {
+        @media (max-width: 768px) { @content ; }
+    }
+    @else if $point == small {
+        @media (max-width: 414px) { @content ; }
+    }
+    @else if $point == tiny {
+        @media (max-width: 320px) { @content ; }
+    }
+}
+
+
+/*********************
+MEDIA QUERIES
+*********************/
+
+@include breakpoint(xlarge) {
+    .about > .testimonials > .agile {
+        width: 90%;
+    }
+}
+
+@include breakpoint(large) {
+    
+    .contact-bar, .nav-bar {
+        display: none;
+    }
+    .nav-bar-mobile {
+        display: flex;
+    }
+    #app {
+        padding-top: 4rem;
+    }
+    .about section {
+        margin: 0;
+    } 
+    .about .summary .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+
+        .summary--right {
+            width: 90%;
+            margin: 2rem 0;
+        }
+    }
+    section.testimonials {
+        margin-bottom: 3rem;
+    }
+    .services .service-icons {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contactus {
+        p, form {
+            width: 80%;
+        }
+    }
+}
+
+
+@include breakpoint(medium) {
+    .nav-bar-mobile .mobile--header {
+        .brand h1 {
+            padding: 0;
+            font-size: 1.5em;
+        }
+        .fa-ellipsis-v {
+            padding: 0 1rem;
+        }
+    }
+    
+    .services .service-icons {
+        grid-template-columns: auto repeat(2, 1fr) auto;
+        grid-template-areas: '. s1 s2 .'
+                             '. s3 s4 .'
+                             '. s5 s6 .'
+    }
+
+    .services .pricing__table {
+        flex-direction: column;
+        align-items: center;
+
+        .item {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        .right .item:first-child {
+            border-top: 1px solid var(--color-bg-gray-darken);
+        }
+    }
+    .portfolio .isotope .item { margin: 0.5rem;
+               margin-bottom: 1.5rem;
+        width: 16rem;
+
+    }
+     .contactus {
+        p, form {
+            width: 90%;
+        }
+    }
+}
+
+
+
+
+@include breakpoint(small) {
+    .portfolio .nav {
+        padding: 0.5rem;
+        background: var(--color-bg-gray);
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: flex-start;
+
+            li {
+                text-align: center;
+            }
+
+            button { 
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+
+@include breakpoint(tiny) {
+    .nav-bar-mobile .mobile--header {
+        .brand h1 {
+            font-size: 1.2em;
+        }
+        .fa-ellipsis-v {
+            font-size: 1.2em;
+        }
+    }
+}

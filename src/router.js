@@ -18,7 +18,7 @@ export default new Router({
       return {
           selector: to.hash, 
           behavior: 'auto', 
-          offset: { x: 0, y: 80 }
+          offset: { x: 0, y: 140 }
         }
     } else if (savedPosition) {
       return savedPosition

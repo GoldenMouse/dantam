@@ -1,5 +1,5 @@
 <template>
-<div class="about">
+<div class="about" id="about">
     <TitleHeader title="About Me"></TitleHeader>
     <section class="summary">
         <div class="container">
@@ -125,6 +125,7 @@ export default {
         }
         &--right {
             width: 55%;
+            margin-left: 2rem;
         }
         &--name {
             padding: 0.5rem 0.5rem;
@@ -321,4 +322,5 @@ export default {
         }
     }
 }
+
 </style>
