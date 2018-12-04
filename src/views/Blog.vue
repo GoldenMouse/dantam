@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss">
 .blog {
+    padding-bottom: 3rem;
     img {
         display: block;
         margin: 0 auto;
@@ -35,5 +36,6 @@ export default {
     .container {
         flex-direction: column;
     }
+
 }
 </style>

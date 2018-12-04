@@ -202,23 +202,30 @@ MEDIA QUERIES
         background: var(--color-bg-gray);
         ul {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
 
             li {
+                display: flex;
+                align-items: center;  
                 text-align: center;
-                margin: 0
+                margin: 0;
             }
 
             button { 
-                padding: 1rem 1rem;
                 margin: 0;
-                font-size: 0.7em;
+                padding: 1rem;
+                font-size: 0.75em;
+                font-family: var(--font-family);
+                font-weight: 700;
             }
         }
     }
 
     .contactus {
+        p {
+            font-size: 0.9em;
+        }
         form {
             width: 100%;
         }
