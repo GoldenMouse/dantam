@@ -111,12 +111,55 @@ MEDIA QUERIES
             width: 90%;
         }
     }
+
+    .footer .container {
+        padding: 0 1rem;
+
+        h4 {
+            margin: 0;
+            transform: none;
+        }
+    }
 }
 
 
 
 
 @include breakpoint(small) {
+    .about .container {
+        padding: 1rem;
+
+        figure {
+            align-items: center;
+            img {
+                width: 90%;
+            }
+        }
+    }
+
+    .about .testimonials .agile{
+        display: none;
+
+        &--mobile {
+            display: block;
+
+            .slide {
+                margin: 0;
+                margin-bottom: 2rem;
+                .card {
+                    padding: 2rem;
+                    padding-bottom: 5rem;
+                    margin: 0;
+                    margin-bottom: 0;
+
+                    .card:first-child  {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
     .portfolio .nav {
         padding: 0.5rem;
         background: var(--color-bg-gray);
@@ -132,6 +175,15 @@ MEDIA QUERIES
             button { 
                 padding: 0.5rem;
             }
+        }
+    }
+    .footer .container {
+        padding: 0 0.5rem;
+
+        h4 {
+            font-size: 0.7em;
+            margin: 0;
+            transform: none;
         }
     }
 }

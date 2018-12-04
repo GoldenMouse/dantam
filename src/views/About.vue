@@ -28,7 +28,6 @@
     <section class="testimonials">
         <TitleHeader title="Testimonials"></TitleHeader>
         <agile :options="agileOptions" :speed=600 :autoplaySpeed=6000>
-
             <div class="slide">
                 <div class="card">
                     <div class="signature">Zachary M.</div>
@@ -52,7 +51,35 @@
                     </blockquote>
                 </div>
             </div>
+        </agile>
 
+        <agile :options="agileOptions" :speed=600 :autoplaySpeed=6000 class="agile--mobile">
+            <div class="slide">
+                <div class="card">
+                    <div class="signature">Zachary M.</div>
+                    <blockquote>Lorem ex exercitation dolore nisi et voluptate cillum consequat ullamco laborum amet tempor id. Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis.</blockquote>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card">
+                    <div class="signature">Hanh Cao</div>
+                    <blockquote>Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis. Elit nostrud reprehenderit nisi cillum cillum nisi cillum nisi.
+                    </blockquote>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card">
+                    <div class="signature">Frank Ma</div>
+                    <blockquote>Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis.</blockquote>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card">
+                    <div class="signature">Chau Nguyen</div>
+                    <blockquote>Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis. Elit nostrud reprehenderit nisi cillum cillum nisi cillum nisi.
+                    </blockquote>
+                </div>
+            </div>
         </agile>
     </section>
 
@@ -204,6 +231,10 @@ export default {
         width: 70%;
         margin: 0 auto;
 
+        &--mobile {
+            display: none;
+        }
+
         &__dots {
             bottom: 0;
             left: 50%;
@@ -264,6 +295,7 @@ export default {
         display: flex;
         width: 100%;
         padding: 1rem;
+
 
         .card {
             flex: 1;

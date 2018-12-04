@@ -5,6 +5,7 @@ import About from './views/About.vue'
 import ContactUs from './views/ContactUs.vue'
 import Services from './views/Services.vue'
 import Portfolio from './views/Portfolio.vue'
+import Blog from './views/Blog.vue'
 import Tester from './components/Tester.vue'
 import NotFound from './components/NotFound.vue'
 
@@ -51,6 +52,11 @@ export default new Router({
       path: '/contactus',
       name: 'contactus',
       component: ContactUs 
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: Blog
     },
     {
       path: '/tester',

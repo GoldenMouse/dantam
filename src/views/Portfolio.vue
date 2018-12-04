@@ -106,7 +106,7 @@ export default {
         },
         stickyNavScroll() {
             let portfolio = document.querySelector('.portfolio')
-            if (window.scrollY >= 300) {
+            if (window.scrollY >= 330) {
                 portfolio.style.paddingTop = '8rem'
                 this.stickied = true
             } else {

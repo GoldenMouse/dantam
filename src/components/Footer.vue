@@ -1,7 +1,7 @@
 <template>
 <footer ref="footer" class="footer">
     <div class="container">
-        <h4><i class="far fa-copyright"></i> 2018 All Rights Reserved Privacy Policy</h4>
+        <h4><i class="far fa-copyright"></i> 2018 Privacy Policy</h4>
         <div class="social">
             <ul>
                 <li><a href="#" class="fab fa-facebook-f"></a></li>

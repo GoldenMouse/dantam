@@ -13,12 +13,12 @@
 
     <div class="mobile--menu" :class="{ 'mobile--menu--active': hamActive }">
         <ul>
-            <li><router-link :to="{ name: 'home' }" @click.native="toggleNav()">Home</router-link></li>
-            <li><a @click="$router.push('/#about'); toggleNav()">About</a></li>
-            <li><a @click="$router.push('/#services'); toggleNav()">Services</a></li>
-            <li><router-link :to="{ name: 'portfolio' }" @click.native="toggleNav()">Portfolio</router-link></li>
-            <li><a @click="$router.push('/#contactus'); toggleNav()" >Contact</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><router-link :to="{ name: 'home' }" @click.native="toggleNav">Home</router-link></li>
+            <li><router-link :to="{ name: 'about' }" @click.native="toggleNav">About</router-link></li>
+            <li><router-link :to="{ name: 'services' }" @click.native="toggleNav">Services</router-link></li>
+            <li><router-link :to="{ name: 'portfolio' }" @click.native="toggleNav">Portfolio</router-link></li>
+            <li><router-link :to="{ name: 'contactus' }" @click.native="toggleNav">Contact</router-link></li>
+            <li><router-link :to="{ name: 'blog' }" @click.native="toggleNav">Contact</router-link></li>
         </ul>
     </div>
 
