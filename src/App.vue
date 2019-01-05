@@ -21,153 +21,19 @@ import Footer from '@/components/Footer'
 import MediaQueries from '@/components/MediaQueries'
 
 export default {
-    name: 'App',
-    components: {
-        BackToTop,
-        ContactBar,
-        NavBar,
-        NavBarMobile,
-        Footer,
-        MediaQueries
-    },
+  name: 'App',
+  components: {
+      BackToTop,
+      ContactBar,
+      NavBar,
+      NavBarMobile,
+      Footer,
+      MediaQueries
+  },
 }
 </script>
 
 <style lang="scss">
-
-
-/***
-@include breakpoint(large) {
-    .contact-bar, .nav-bar {
-        display: none;
-    }
-    .nav-bar-mobile {
-        display: flex;
-    }
-}
-
-@include breakpoint(medium) {
-    .container h1 {
-        font-size: 1.8rem;
-    }
-    p {
-        font-size: 0.9rem !important;
-    }
-    .back-to-top {
-        transform: scale(0.8);
-    }
-    .main-hero .overlay-image,
-    .main-hero .right {
-        display: none;
-    }
-    .main-hero .container .left {
-        margin: 0 auto;
-        width: 80%;
-    }
-    #about .container {
-        flex-direction: column;
-    }
-    #about .container .right {
-        margin-top: 2rem;
-        width: 70%;
-    }
-    #about .image-with-backdots {
-        padding: 0;
-    }
-    #about .image-with-backdots > img {
-        left: 1rem;
-        bottom: 1rem;
-        width: 15rem;
-        height: auto;
-        transform: translateX(-2rem);
-    }
-    #services .service-icons {
-        grid-template-columns: 1fr;
-        grid-template-areas: 's1'
-                       's2'
-                       's3'
-                       's4'
-                       'i';
-    }
-    #services .service p {
-        width: 70%;
-    }
-    .home .pricing > .container > .pricing__table {
-        flex-direction: column;
-        width: 70%;
-
-        & .left, .right {
-            margin: 0;
-        }
-    }
-    .home .pricing > .container p {
-        width: 70%;
-    }
-    .home .testimonials .agile {
-        width: 90%;
-
-        & blockquote {
-            margin: 2rem 0;
-            font-size: 0.8rem !important;
-
-            &:before,
-            &:after {
-                display: none;
-            }
-        }
-        & .signature {
-            margin-top: 1rem;
-            font-size: 1rem;
-        }
-    }
-    .contactus > .container > form,
-    .contactus > .container > p,
-    {
-        width: 80%;
-    }
-    .footer > .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        & h4 {
-            margin: 0;
-            margin-bottom: 0.5rem;
-            transform: none;
-        }
-    }
-    .portfolio ul {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .portfolio ul button {
-        padding: 1rem 0;
-    }
-    .portfolio .isotope .item {
-        width: 40% !important;
-        margin-bottom: 1rem !important; 
-        height: 10rem !important;
-    }
-}
-
-@include breakpoint(small) {
-    .container h1 {
-        font-size: 1.3rem;  
-    }
-    p {
-        font-size: 0.8rem !important;
-    }
-    .nav-bar-mobile .brand h1 {
-        font-size: 1rem !important;
-    }
-    .nav-bar-mobile .hamburger,
-    .nav-bar-mobile .fa-ellipsis-v {
-        transform: scale(0.8);
-    }
-} 
-
-***/
-
 #app {
     display: flex;
     flex-direction: column;

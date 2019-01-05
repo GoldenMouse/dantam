@@ -16,7 +16,7 @@
             <ul>
                 <li><router-link :to="{ name: 'portfolio' }">Portfolio</router-link></li>
                 <li><router-link :to="{ name: 'contactus' }">Contact</router-link></li>
-                <li><router-link :to="{ name: 'blog' }">Contact</router-link></li>
+                <li><router-link :to="{ name: 'blog' }">Blog</router-link></li>
             </ul>
         </div>
     </div>

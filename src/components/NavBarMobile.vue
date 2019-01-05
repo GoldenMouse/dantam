@@ -2,6 +2,7 @@
 <div class="nav-bar-mobile">
     <div class="mobile--header">
         <Hamburger :class="{ hamburger: true, active: hamActive}" @click.native="toggleNav" />
+        <h3 class="hamburger--title">Menu</h3>
         
         <div class="brand" @click="$router.push({ name: 'home' })">
             <h1>[DanTam Beauty]</h1>
@@ -65,8 +66,16 @@ export default {
     display: none;
 
     & .hamburger {
-        padding-left: 1rem;
-        padding-right: 0.5rem;
+      padding-left: 1rem;
+      padding-right: 0.5rem;
+
+      &--title {
+        font-size: 0.5em;
+        position: absolute;
+        left: 1.05rem;
+        bottom: 0.7rem;
+      }
+
     }
 
     & .mobile--header {
@@ -89,7 +98,8 @@ export default {
             padding-top: 0.4rem;
             font-family: 'Countryside', 'serif';
             font-size: 1.6rem;
-            color: var(--color-primary-darken);
+            // color: var(--color-primary-darken);
+            color: #ff9199; 
             line-height: 1.9;
             padding-left: 1rem;
         }

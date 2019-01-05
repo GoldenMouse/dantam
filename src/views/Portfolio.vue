@@ -36,7 +36,6 @@
 
 <script>
 import 'lightgallery.js'
-import 'lg-thumbnail.js'
 import 'lg-fullscreen.js'
 import 'lg-zoom.js'
 import 'lightgallery.js/dist/css/lightgallery.css'
@@ -145,13 +144,13 @@ export default {
         window.removeEventListener('scroll', this.stickyNavScroll)
     },
     mounted() {
-        // Initialize Isotope
+        // Initialize Light Gallery 
         const el = document.querySelector('#isotope')
         window.lightGallery(el, {
             selector: '.item',
             closable: false,
-            thumbnail: true,
-            animateThumb: true,
+            thumbnail: false,
+            animateThumb: false,
             // thumbWidth: 120,
             download: false,
             preload: 2,

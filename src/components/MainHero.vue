@@ -11,15 +11,20 @@
                 </div>
             </div>
             -->
-            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/img/main-hero-2-min.jpg') + ')'}"></div>
+            <div class="slide--main" :style="{
+              'background-image': 'url(' + require('../assets/img/main-hero-1.jpg') + ')', 
+              'background-position': '50% 40%'}"></div>
         </div>
 
         <div class="slide">
-            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/img/main-hero-1-min.jpg') + ')'}"></div>
+            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/img/main-hero-2.jpg') + ')'}"></div>
         </div>
 
         <div class="slide">
-            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/img/main-hero-3-min.jpg') + ')'}"></div>
+            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/img/main-hero-3.jpeg') + ')'}"></div>
+        </div>
+        <div class="slide">
+            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/img/main-hero-4.jpg') + ')'}"></div>
         </div>
     </agile>
 </div>
@@ -142,7 +147,8 @@ export default {
 
         &--main {
             flex: 1;
-            background-position: 50% 40%;
+            // background-position: 50% 40%;
+            background-position: 50% 15%;
             background-size: cover;
             background-repeat: no-repeat;
         }

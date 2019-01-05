@@ -3,12 +3,14 @@ import App from './App.vue'
 import router from './router'
 //import "bulma/bulma.sass";
 import VueAgile from 'vue-agile'
+import Vuelidate from 'vuelidate'
 import '@/scss/mediaquery.scss'
 
 import Social from './components/Social.vue'
 
 Vue.component('social', Social)
 Vue.use(VueAgile)
+Vue.use(Vuelidate)
 
 Vue.config.productionTip = false
 
