@@ -108,15 +108,13 @@ export default {
         font-family: 'Countryside', 'serif';
         // font-family: 'Countryside', 'serif';
         font-size: 2rem;
-        // color: #ff9f80;
-        color: var(--color-primary-darken);
+        color: #ff9199;
         padding: 0;
         margin: 0;
         text-align: center;
         display: inline-block;
         line-height: 1.9;
         transition: font-size 0.3s;
-        // letter-spacing: -0.1rem;
 
     }
 

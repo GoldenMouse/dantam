@@ -38,8 +38,6 @@
             </div>
             <h2>Lashes</h2>
         </div>
-
-        <!-- <div class="service-image"><img src="@/assets/bridal.jpeg" alt="bridal hair" class="image-cover"/></div> -->
     </section>
 
     <section class="pricing">
@@ -48,12 +46,18 @@
             <div class="divider"></div>
             <p>
               We try to keep this page up to date but please double check with us at the time of service.
-              Also, be sure to read over the <a href>Terms of Service</a>. 
+              Also, be sure to read over the 
+              <router-link 
+                tag="a" 
+                to="#terms" 
+                @click.native="scrollFix('#terms')">Terms of Service</router-link> 
             </p>
             <div class="pricing__table">
                 <div class="left">
                     <div class="item">
-                        <div class="item--title">Bridal</div>
+                        <div class="item--title">Bridal
+                          <router-link class="asterisk" to="#terms" @click.native="scrollFix('#terms')"/>
+                        </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
                             <div class="subitem--price">200</div>
@@ -68,12 +72,14 @@
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Touch-ups</p>
-                            <div class="subitem--price">200</div>
+                            <div class="subitem--price">100 /hr</div>
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="item--title">Bridesmaids</div>
+                        <div class="item--title">Bridesmaids
+                          <router-link class="asterisk" to="#terms" @click.native="scrollFix('#terms')"/>
+                        </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
                             <div class="subitem--price">100</div>
@@ -181,43 +187,46 @@
                             <div class="subitem--price">50</div>
                         </div>
                     </div>
-
-                    <div class="terms">
-                      <div class="terms--title">Terms of Service</div>
-                      <div class="terms--item">
-                        <div class="terms--subtitle">Bridal & Bridesmaid Services</div>
-                        <p>Touch-up price is per hour (evenings). Airbrush makeup included, after consultation. Faux lashes included. Body airbrushing (scars & tattoo coverage) will be quoted.</p>
-                      </div>
-
-                      <div class="terms--item">
-                        <div class="terms--subtitle">Deposit</div>
-                        <p>A 20% deposit (client's total price) with contract is required to reserve dates (NON-REFUNDABLE and NON-TRANSFERABLE).</p>
-                      </div>
-
-                      <div class="terms--item">
-                        <div class="terms--subtitle">Extended Service</div>
-                        <p>Full day rates will be quoted. Lodging and a vendor meal are required when working more than 6 hours.</p>
-                      </div>
-
-                      <div class="terms--item">
-                        <div class="terms--subtitle">Travel Fees</div>
-                        <p>$1 per mile round trip (to location and back), from makeup studio.</p>
-                      </div>
-
-                      <div class="terms--item">
-                        <div class="terms--subtitle">Early Start Fees</div>
-                        <p>Before 8am add $50, before 6am add $100.</p>
-                      </div>
-
-                      <div class="terms--item">
-                        <div class="terms--subtitle">Parking Fees</div>
-                        <p>Hotel parking fees will be charged to the contract or hotel room on the day of the event, if a parking fee is required.</p>
-                      </div>
-                    </div>
-
                 </div>
             </div>
         </div>
+        <div class="container">
+          <div class="terms" id="terms">
+              <div class="terms--title">Terms of Service</div>
+              <div class="terms--item">
+                <div>
+                  <span class="terms--subtitle">Bridal & Bridesmaid Services</span>
+                  <span class="asterisk"></span>
+                </div>
+                <p>Touch-up price is per hour (evenings). Airbrush makeup included, after consultation. Faux lashes included. Body airbrushing (scars & tattoo coverage) will be quoted.</p>
+              </div>
+
+              <div class="terms--item">
+                <div class="terms--subtitle">Deposit</div>
+                <p>A 20% deposit (client's total price) with contract is required to reserve dates (NON-REFUNDABLE and NON-TRANSFERABLE).</p>
+              </div>
+
+              <div class="terms--item">
+                <div class="terms--subtitle">Extended Service</div>
+                <p>Full day rates will be quoted. Lodging and a vendor meal are required when working more than 6 hours.</p>
+              </div>
+
+              <div class="terms--item">
+                <div class="terms--subtitle">Travel Fees</div>
+                <p>$1 per mile round trip (to location and back), from makeup studio.</p>
+              </div>
+
+              <div class="terms--item">
+                <div class="terms--subtitle">Early Start Fees</div>
+                <p>Before 8am add $50, before 6am add $100.</p>
+              </div>
+
+              <div class="terms--item">
+                <div class="terms--subtitle">Parking Fees</div>
+                <p>Hotel parking fees will be charged to the contract or hotel room on the day of the event, if a parking fee is required.</p>
+              </div>
+            </div>
+          </div>
     </section>
 </div>
 </template>
@@ -230,6 +239,12 @@ export default {
     components: {
         TitleHeader,
     },
+    methods: {
+      scrollFix: function(hashbang)
+      {
+        location.href = hashbang;
+      }
+    }
 }
 </script>
 
@@ -328,6 +343,11 @@ export default {
     }
 
     & .pricing {
+        .asterisk::after {
+          content: '\002a';
+          color: var(--color-primary-darken);
+          font-size: 1.4rem;
+        }
         & > .container {
             display: flex;
             flex-direction: column;

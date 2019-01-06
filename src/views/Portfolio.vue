@@ -91,13 +91,6 @@ export default {
             this.$refs.isotope.filter(key)
             this.filterOption = key
         },
-        jumpToNav() {
-            // this.$refs.portfolioNav.scrollIntoView(true)
-            this.$router.push({
-                name: 'portfolio',
-                hash: '#portfolioNav',
-            })
-        },
         importAll(r) {
             var imgs = {}
             r.keys().forEach(key => (imgs[key] = r(key)))
