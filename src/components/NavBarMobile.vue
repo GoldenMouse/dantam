@@ -102,6 +102,12 @@ export default {
             color: #ff9199; 
             line-height: 1.9;
             padding-left: 1rem;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
         & .fa-ellipsis-v {
