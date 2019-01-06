@@ -2,7 +2,7 @@
 <div class="nav-bar-mobile">
     <div class="mobile--header">
         <Hamburger :class="{ hamburger: true, active: hamActive}" @click.native="toggleNav" />
-        <h3 class="hamburger--title">Menu</h3>
+        <h3 class="hamburger--title" @click="toggleNav">Menu</h3>
         
         <div class="brand" @click="$router.push({ name: 'home' })">
             <h1>[DanTam Beauty]</h1>
