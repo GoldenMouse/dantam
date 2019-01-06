@@ -202,18 +202,19 @@ MEDIA QUERIES
     }
 
     .services .pricing p {
-        font-size: 0.9em;
+        font-size: 0.8em;
         margin: 0 1rem;
     }
     .services .pricing .container {
         padding: 0;
 
         .pricing__table .item--title {
-          font-size: 1em;
+          font-size: 1.2em;
         }
 
         .pricing__table .item .subitem--name {
           margin: 0;
+          font-size: 1em;
         }
 
         .terms {
@@ -224,12 +225,12 @@ MEDIA QUERIES
         }
 
         .terms--subtitle {
-          font-size: 1em;
+          font-size: 0.9em;
         }
 
         .terms p {
           margin: 0;
-          font-size: 0.8em;
+          font-size: 0.7em;
         }
     }
     
