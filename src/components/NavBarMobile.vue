@@ -172,14 +172,24 @@ export default {
         opacity: 0;
         transition: opacity 0.35s cubic-bezier(0.65, 0.05, 0.36, 1);
 
+        
+
         & .contact-info {
-             & div span:first-child {
+            & div span:first-child {
                 font-weight: 700;
+            }
+
+            a {
+              text-decoration: underline;
             }
         }
 
         & .social {
-            margin-top: 0.5rem;
+            margin-top: 1rem;
+            font-size: 1.4rem;
+            a {
+              padding-right: 0.5rem;
+            }
         }
 
         & ul li {
