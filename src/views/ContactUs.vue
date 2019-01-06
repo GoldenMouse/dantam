@@ -7,7 +7,7 @@
         <div class="contact-info">
             <div class="address">
                 <i class="fas fa-home"></i>
-                <p>123 Fake St, <br/> Sunnyvale, CA 94087</p>
+                <p>324 S. Abel St, <br/> Milpitas, CA 95035</p>
             </div>
             <div class="email">
                 <i class="fas fa-envelope"></i>
