@@ -171,31 +171,68 @@ MEDIA QUERIES
     }
 
     .services .service-icons {
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: '. s1 .'
-                             '. s2 .'
-                             '. s3 .'
-                             '. s4 .'
-                             '. s5 .'
-                             '. s6 .'
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas: 's1 s2'
+                             's3 s4'
+                             's5 s6';
     }
+
+    .services {
+      h2 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.9em;
+      }
+    }
+
     .services .service {
         border-bottom: 1px solid var(--color-bg-gray-darken); 
+        padding: 0 0.5rem;
 
         &:last-child {
             border-bottom: none;
         }
+        &:nth-child(3) {
+          border-right: 1px solid var(--color-bg-gray-darken);
+        }
+        &:nth-child(5) {
+          border-bottom: none;
+        }
     }
 
     .services .pricing p {
-        width: 85%;
+        font-size: 0.9em;
+        margin: 0 1rem;
     }
     .services .pricing .container {
         padding: 0;
+
+        .pricing__table .item--title {
+          font-size: 1em;
+        }
+
+        .pricing__table .item .subitem--name {
+          margin: 0;
+        }
+
+        .terms {
+          padding: 2rem;
+        }
+        .terms--title {
+          font-size: 1.1em;
+        }
+
+        .terms--subtitle {
+          font-size: 1em;
+        }
+
+        .terms p {
+          margin: 0;
+          font-size: 0.8em;
+        }
     }
-    .services .pricing .container .pricing__table > .left, .right {
-        margin: 0;
-    } 
+    
 
     .portfolio .title-header p {
         font-size: 0.8em;
@@ -226,18 +263,18 @@ MEDIA QUERIES
     }
 
     .contactus {
-        p {
-            font-size: 0.9em;
-        }
-        form {
-            width: 100%;
-        }
-        .contact-info .email{
-            padding-right: 1.2rem;
-        }
-        .contact-info > div > p {
-            font-size: 0.9em;
-        }
+      p {
+          font-size: 0.9em;
+      }
+      form {
+          width: 100%;
+      }
+      .contact-info .email{
+          padding-right: 1.2rem;
+      }
+      .contact-info > div > p {
+          font-size: 0.9em;
+      }
     }
 
     .footer .container {

@@ -2,7 +2,7 @@
 <div class="contactus" id="contactus">
     <div class="container">
         <TitleHeader title='Contact Us'>
-            Have any questions? Feel free to use the contact form below to get in touch with us. We will answer you as soon as possible!
+            Have any questions? Feel free to use the contact form below to get in touch with me. I will answer you as soon as possible!
         </TitleHeader>
         <div class="contact-info">
             <div class="address">

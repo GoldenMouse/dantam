@@ -133,7 +133,8 @@ export default {
                     category: image.split('/').slice(-2)[0]
                 })
             }
-            return images
+            // return item in descending order -> newest first
+            return images.reverse()
         },
         
     },

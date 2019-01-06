@@ -4,45 +4,39 @@
     <section class="service-icons">
         <div class="service">
             <div class="pink-circle-bg">
-                <img src="@/assets/svg/makeupstuff.svg" alt="makeup material"/>
+                <img src="@/assets/svg/makeup.svg" alt="makeup material"/>
             </div>
             <h2>Makeup</h2>
-            <p>No ius facer electram, mel an enim nihil eirmod. Ceteros alienum ad nec.</p>
         </div>
         <div class="service">
             <div class="pink-circle-bg">
                 <img src="@/assets/svg/brush.svg" alt="brush"/>
             </div>
             <h2>Hair</h2>
-            <p>Ne quo oportere appellantur, ut vix esse liber molestie. Enim tamquam maiorum per id</p>
+        </div>
+         <div class="service">
+            <div class="pink-circle-bg">
+                <img src="@/assets/svg/handmirror.svg" alt="handmirror"/>
+            </div>
+            <h2>Touch-Up</h2>
         </div>
         <div class="service">
             <div class="pink-circle-bg">
                 <img src="@/assets/svg/eyebrow.svg" alt="eyebrow" class="eyebrow"/>
             </div>
-            <h2>Eyebrows</h2>
-            <p>Id nam meis nonumy interpretaris, est simul recusabo in, in qui justo omnes. Cetero aliquam ius ei, malorum appellantur sea cu.</p>
+            <h2>Brows</h2>
         </div>
         <div class="service">
             <div class="pink-circle-bg">
-                <img src="@/assets/svg/handmirror.svg" alt="handmirror"/>
+                <img src="@/assets/svg/eyeliner.svg" alt="lotions"/>
             </div>
-            <h2>Touch-Up</h2>
-            <p>Ex vim possit habemus maluisset, alienum delicata repudiare ei eum. Amet alia pertinacia sea ea</p>
+            <h2>Eyeliner</h2>
         </div>
         <div class="service">
             <div class="pink-circle-bg">
-                <img src="@/assets/svg/lotions.svg" alt="lotions"/>
+                <img src="@/assets/svg/eyelashes.svg" alt="comb"/>
             </div>
-            <h2>Facials</h2>
-            <p>Ex vim possit habemus maluisset, alienum delicata repudiare ei eum. Amet alia pertinacia sea ea</p>
-        </div>
-        <div class="service">
-            <div class="pink-circle-bg">
-                <img src="@/assets/svg/comb.svg" alt="comb"/>
-            </div>
-            <h2>Others</h2>
-            <p>Ex vim possit habemus maluisset, alienum delicata repudiare ei eum. Amet alia pertinacia sea ea</p>
+            <h2>Lashes</h2>
         </div>
 
         <!-- <div class="service-image"><img src="@/assets/bridal.jpeg" alt="bridal hair" class="image-cover"/></div> -->
@@ -53,68 +47,174 @@
             <h1>Pricing</h1>
             <div class="divider"></div>
             <p>
-                Do eiusmod pariatur aliqua quis duis quis et Lorem anim esse laboris incididunt nostrud.
-                Et enim exercitation qui commodo.
+              We try to keep this page up to date but please double check with us at the time of service.
+              Also, be sure to read over the <a href>Terms of Service</a>. 
             </p>
             <div class="pricing__table">
                 <div class="left">
                     <div class="item">
-                        <div class="item--name">
-                            <h2>Essential</h2>
-                            <p>60 &mdash; 100 Minute Sessions</p>
+                        <div class="item--title">Bridal</div>
+                        <div class="subitem">
+                            <p class="subitem--name">Makeup &#43; Hair</p>
+                            <div class="subitem--price">200</div>
                         </div>
-                        <div class="item--price">
-                            <h2>40.00</h2>
+                        <div class="subitem">
+                            <p class="subitem--name">Makeup</p>
+                            <div class="subitem--price">100</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Hair</p>
+                            <div class="subitem--price">100</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Touch-ups</p>
+                            <div class="subitem--price">200</div>
                         </div>
                     </div>
+
                     <div class="item">
-                        <div class="item--name">
-                            <h2>Essential</h2>
-                            <p>60 &mdash; 100 Minute Sessions</p>
+                        <div class="item--title">Bridesmaids</div>
+                        <div class="subitem">
+                            <p class="subitem--name">Makeup &#43; Hair</p>
+                            <div class="subitem--price">100</div>
                         </div>
-                        <div class="item--price">
-                            <h2>40.00</h2>
+                        <div class="subitem">
+                            <p class="subitem--name">Makeup</p>
+                            <div class="subitem--price">50</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Hair</p>
+                            <div class="subitem--price">50</div>
+                        </div>
+                    </div> 
+
+                    <div class="item">
+                        <div class="item--title">Trial</div>
+                        <div class="subitem">
+                            <p class="subitem--name">Makeup &#43; Hair</p>
+                            <div class="subitem--price">100</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Makeup</p>
+                            <div class="subitem--price">50</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Hair</p>
+                            <div class="subitem--price">50</div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="item--name">
-                            <h2>Essential</h2>
-                            <p>60 &mdash; 100 Minute Sessions</p>
+
+                      <div class="item">
+                        <div class="item--title">Engagements</div>
+                        <div class="subitem">
+                            <p class="subitem--name">Makeup &#43; Hair</p>
+                            <div class="subitem--price">200</div>
                         </div>
-                        <div class="item--price">
-                            <h2>40.00</h2>
+                        <div class="subitem">
+                            <p class="subitem--name">Makeup</p>
+                            <div class="subitem--price">100</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Hair</p>
+                            <div class="subitem--price">100</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item--title">Special Occasions</div>
+                        <div class="subitem">
+                            <p class="subitem--name">Makeup &#43; Hair</p>
+                            <div class="subitem--price">100</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Makeup</p>
+                            <div class="subitem--price">50</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Hair</p>
+                            <div class="subitem--price">50</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="right">
                     <div class="item">
-                        <div class="item--name">
-                            <h2>Essential</h2>
-                            <p>60 &mdash; 100 Minute Sessions</p>
+                        <div class="item--title">Brows</div>
+                        <div class="subitem">
+                            <p class="subitem--name">Microblading &#43; Ombre</p>
+                            <div class="subitem--price">300</div>
                         </div>
-                        <div class="item--price">
-                            <h2>40.00</h2>
+                        <div class="subitem">
+                            <p class="subitem--name">Microblading</p>
+                            <div class="subitem--price">200</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Ombre</p>
+                            <div class="subitem--price">200</div>
                         </div>
                     </div>
+
                     <div class="item">
-                        <div class="item--name">
-                            <h2>Essential</h2>
-                            <p>60 &mdash; 100 Minute Sessions</p>
+                        <div class="item--title">Eyeliner</div>
+                        <div class="subitem">
+                            <p class="subitem--name">Wing Eyeliner</p>
+                            <div class="subitem--price">300</div>
                         </div>
-                        <div class="item--price">
-                            <h2>40.00</h2>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item--name">
-                            <h2>Essential</h2>
-                            <p>60 &mdash; 100 Minute Sessions</p>
-                        </div>
-                        <div class="item--price">
-                            <h2>40.00</h2>
+                        <div class="subitem">
+                            <p class="subitem--name">Lash Enhancement</p>
+                            <div class="subitem--price">200</div>
                         </div>
                     </div>
+
+                     <div class="item">
+                        <div class="item--title">Lashes</div>
+                        <div class="subitem">
+                            <p class="subitem--name">Lift &#43; Tinting</p>
+                            <div class="subitem--price">80</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Lift</p>
+                            <div class="subitem--price">50</div>
+                        </div>
+                        <div class="subitem">
+                            <p class="subitem--name">Tinting</p>
+                            <div class="subitem--price">50</div>
+                        </div>
+                    </div>
+
+                    <div class="terms">
+                      <div class="terms--title">Terms of Service</div>
+                      <div class="terms--item">
+                        <div class="terms--subtitle">Bridal & Bridesmaid Services</div>
+                        <p>Touch-up price is per hour (evenings). Airbrush makeup included, after consultation. Faux lashes included. Body airbrushing (scars & tattoo coverage) will be quoted.</p>
+                      </div>
+
+                      <div class="terms--item">
+                        <div class="terms--subtitle">Deposit</div>
+                        <p>A 20% deposit (client's total price) with contract is required to reserve dates (NON-REFUNDABLE and NON-TRANSFERABLE).</p>
+                      </div>
+
+                      <div class="terms--item">
+                        <div class="terms--subtitle">Extended Service</div>
+                        <p>Full day rates will be quoted. Lodging and a vendor meal are required when working more than 6 hours.</p>
+                      </div>
+
+                      <div class="terms--item">
+                        <div class="terms--subtitle">Travel Fees</div>
+                        <p>$1 per mile round trip (to location and back), from makeup studio.</p>
+                      </div>
+
+                      <div class="terms--item">
+                        <div class="terms--subtitle">Early Start Fees</div>
+                        <p>Before 8am add $50, before 6am add $100.</p>
+                      </div>
+
+                      <div class="terms--item">
+                        <div class="terms--subtitle">Parking Fees</div>
+                        <p>Hotel parking fees will be charged to the contract or hotel room on the day of the event, if a parking fee is required.</p>
+                      </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -173,7 +273,6 @@ export default {
             opacity: 1;
         }
         & p {
-            font-size: 1em; 
             padding: 0;
             margin: 1rem 0;
             font-weight: 400;
@@ -181,6 +280,7 @@ export default {
         }
         & h2 {
             z-index: 1;
+            margin: 1rem 0;
         }
         &:nth-child(1) {
             grid-area: s1;
@@ -256,30 +356,67 @@ export default {
                 width: 100%;
             }
             & .item {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 padding: 1.5rem 0;
                 border-bottom: 1px solid var(--color-bg-gray-darken);
 
                 &:last-child {
                     border-bottom: none;
                 }
-
-                &--name {
-                    margin-right: 3rem;
-                    & p {
-                        padding-top: 0.5rem;
-                    }
+                &--title {
+                  font-size: 1.4rem;
+                  margin: 0.5rem 0;
                 }
-                &--price {
-                    & h2:before {
-                        content: '\0024';
 
+                .subitem {
+                  display: flex;
+                  justify-content: space-between;
+
+                  &--name {
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.5rem;
+                    text-align: left;
+                  }
+                  &--price {
+                    padding-right: 0.5rem;
+                    &:before {
+                        content: '\0024';
                     }
+                  }
                 }
             }
         }
+    }
+
+    .terms {
+      border: 2px solid var(--color-primary);
+      border-radius: 0.2rem;
+      position: relative;
+      padding: 1.5rem;
+      padding-top: 2rem;
+      margin: 3rem 1rem;
+      margin-bottom: 1rem;
+
+      &--title {
+        font-size: 1.2em;
+        font-weight: 600;
+        position: absolute;
+        padding: 0 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -1rem;
+        background-color: #fff;
+      }
+
+      &--subtitle {
+        font-size: 1.1em;
+        padding-bottom: 0.2rem;
+        padding-top: 0.5rem;
+        text-decoration: underline;
+      }
+      p {
+        text-align: left;
+      }
+
     }
 }
 </style>
