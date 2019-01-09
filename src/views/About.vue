@@ -30,54 +30,85 @@
         <agile :options="agileOptions" :speed=600 :autoplaySpeed=6000>
             <div class="slide">
                 <div class="card">
-                    <div class="signature">Zachary M.</div>
-                    <blockquote>Lorem ex exercitation dolore nisi et voluptate cillum consequat ullamco laborum amet tempor id. Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis.</blockquote>
+                  <div class="signature">Lisa C.</div>
+                  <blockquote>Tam is such a wonderful makeup & hair stylist, I'd give her 6 stars if I could!! The value of her services is incredible. She helped customize my makeup to my specific skin needs. On the day of my makeup trial session, she...<a href="https://www.yelp.com/biz/a-list-makeup-milpitas-4?hrid=ooivB2ScNburc1G76Dbetg&utm_source=ishare&utm_content=review" target="_blank">Read More</a>
+                  </blockquote> 
+                  <img src="@/assets/img/lisa_profile.png" class="testiface"/>
                 </div>
                 <div class="card">
-                    <div class="signature">Hanh Cao</div>
-                    <blockquote>Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis. Elit nostrud reprehenderit nisi cillum cillum nisi cillum nisi.
-                    </blockquote>
+                    <div class="signature">Gestalted G.</div>
+                    <blockquote>Tam and her assistant did an amazing job for my wedding make up and hair. They also did the makeup of my bridesmaids. I was very satisfied with their work and they were great to work with! I typically don't wear a...<a href="https://www.yelp.com/biz/a-list-makeup-milpitas-4?hrid=_Sxv-HOypurqiIo9xqrv8Q&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read More</a></blockquote>
+                    <img src="@/assets/img/gestalt_profile.png" class="testiface"/>
                 </div>
-            </div>
-            
+            </div>          
+
             <div class="slide">
                 <div class="card">
-                    <div class="signature">Frank Ma</div>
-                    <blockquote>Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis.</blockquote>
+                    <div class="signature">Jp L.</div>
+                    <blockquote>This review is for Tam: To begin, Tam was an absolute pleasure to speak with. She was very attentive and professional when my fiancé was describing the type of hairstyle that she wanted. While my fiancé described the hairstyle she wanted, Tam helped by giving suggestions and insight on how to do her hair. Tam was...<a href="https://www.yelp.com/biz/a-list-makeup-milpitas-4?hrid=WCDSxZcvRfAEHYy9zqvkEQ&utm_source=ishare&utm_content=review" target="_blank">Read More</a>
+                    </blockquote>
                 </div>
                 <div class="card">
-                    <div class="signature">Chau Nguyen</div>
-                    <blockquote>Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis. Elit nostrud reprehenderit nisi cillum cillum nisi cillum nisi.
+                    <div class="signature">D.T.</div>
+                    <blockquote>Tam did my hair and makeup at my wedding recently.  I also did a trial with her which was very helpful, it made me feel more confident about how things would go on my wedding day.  Tam was very prompt and had good suggestions.  I...<a href="https://www.yelp.com/biz/a-list-makeup-milpitas-4?hrid=prAfMAi2mYN5FtE-4rDSRw&utm_source=ishare&utm_content=review" target="_blank">Read More</a></blockquote>
+                    <img src="@/assets/img/dt_profile.png" class="testiface"/>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="card">
+                    <div class="signature">Veronica C.</div>
+                    <blockquote>Tam was awesome! I had originally reached out to someone else from A-List (not knowing it was a group of stylists), but the other stylist was not available for my wedding day, so she forwarded my name to her A-List team. I found Tam was affordable, accommodating, and easy to work with. Once we established...<a href="https://www.yelp.com/biz/a-list-makeup-milpitas-4?hrid=pUIE_939xrwCeukYZTpdMg&utm_source=ishare&utm_content=review" target="_blank">Read More</a></blockquote>
+                </div>
+                <div class="card">
+                    <div class="signature">Sakshi G.</div>
+                    <blockquote>Tam helped me with hair and makeup for my family portrait and I was happy with her and her work. She is a very friendly and helpful person who also is talented and capable in her craft as a beauty artist. I would definitely use her again and highly recommend her for anyone considering hiring a professional for their hair and makeup needs for special events.
                     </blockquote>
                 </div>
             </div>
         </agile>
 
         <agile :options="agileOptions" :speed=600 :autoplaySpeed=6000 class="agile--mobile">
-            <div class="slide">
+          <div class="slide">
                 <div class="card">
-                    <div class="signature">Zachary M.</div>
-                    <blockquote>Lorem ex exercitation dolore nisi et voluptate cillum consequat ullamco laborum amet tempor id. Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis.</blockquote>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="card">
-                    <div class="signature">Hanh Cao</div>
-                    <blockquote>Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis. Elit nostrud reprehenderit nisi cillum cillum nisi cillum nisi.
+                    <div class="signature">Lisa C.</div>
+                    <blockquote>Tam is such a wonderful makeup & hair stylist, I'd give her 6 stars if I could!! The value of her services is incredible. She helped customize my makeup to my specific skin needs. On the day of my makeup trial session, she...<a href="https://www.yelp.com/biz/a-list-makeup-milpitas-4?hrid=ooivB2ScNburc1G76Dbetg&utm_source=ishare&utm_content=review" target="_blank">Read More</a>
                     </blockquote>
+                    <img src="@/assets/img/lisa_profile.png" class="testiface"/>
+                </div>
+            </div>
+            <div class="slide">
+              <div class="card">
+                    <div class="signature">Gestalted G.</div>
+                    <blockquote>Tam and her assistant did an amazing job for my wedding make up and hair. They also did the makeup of my bridesmaids. I was very satisfied with their work and they were great to work with! I typically don't wear a...<a href="https://www.yelp.com/biz/a-list-makeup-milpitas-4?hrid=_Sxv-HOypurqiIo9xqrv8Q&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read More</a></blockquote>
+                    <img src="@/assets/img/gestalt_profile.png" class="testiface"/>
+                </div>
+            </div>
+            <div class="slide">
+              <div class="card">
+                  <div class="signature">D.T.</div>
+                  <blockquote>Tam did my hair and makeup at my wedding recently.  I also did a trial with her which was very helpful, it made me feel more confident about how things would go on my wedding day.  Tam was very prompt and had good suggestions.  I...<a href="https://www.yelp.com/biz/a-list-makeup-milpitas-4?hrid=prAfMAi2mYN5FtE-4rDSRw&utm_source=ishare&utm_content=review" target="_blank">Read More</a></blockquote>
+                  <img src="@/assets/img/dt_profile.png" class="testiface"/>
+              </div>
+            </div>
+            <div class="slide">
+                <div class="card">
+                    <div class="signature">Veronica C.</div>
+                    <blockquote>Tam was awesome! I had originally reached out to someone else from A-List (not knowing it was a group of stylists), but the other stylist was not available for my wedding day, so she forwarded my name to her A-List team. I found Tam was affordable, accommodating, and easy to work with. Once we established...<a href="https://www.yelp.com/biz/a-list-makeup-milpitas-4?hrid=pUIE_939xrwCeukYZTpdMg&utm_source=ishare&utm_content=review" target="_blank">Read More</a></blockquote>
                 </div>
             </div>
             <div class="slide">
                 <div class="card">
-                    <div class="signature">Frank Ma</div>
-                    <blockquote>Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis.</blockquote>
+                  <div class="signature">Sakshi G.</div>
+                  <blockquote>Tam helped me with hair and makeup for my family portrait and I was happy with her and her work. She is a very friendly and helpful person who also is talented and capable in her craft as a beauty artist. I would definitely use her again and highly recommend her for anyone considering hiring a professional for their hair and makeup needs for special events.
+                  </blockquote>
                 </div>
             </div>
             <div class="slide">
                 <div class="card">
-                    <div class="signature">Chau Nguyen</div>
-                    <blockquote>Officia veniam in est incididunt eiusmod consequat velit ad incididunt voluptate est ut duis. Elit nostrud reprehenderit nisi cillum cillum nisi cillum nisi.
-                    </blockquote>
+                  <div class="signature">Jp L.</div>
+                  <blockquote>This review is for Tam: To begin, Tam was an absolute pleasure to speak with. She was very attentive and professional when my fiancé was describing the type of hairstyle that she wanted. While my fiancé described the hairstyle she wanted, Tam helped by giving suggestions and insight on how to do her hair. Tam was...<a href="https://www.yelp.com/biz/a-list-makeup-milpitas-4?hrid=WCDSxZcvRfAEHYy9zqvkEQ&utm_source=ishare&utm_content=review" target="_blank">Read More</a>
+                  </blockquote>
                 </div>
             </div>
         </agile>
@@ -352,6 +383,15 @@ export default {
             color: var(--font-color-light);
             font-size: 1.2rem;
         }
+    }
+
+    .testimonials .testiface {
+      width: 4rem;
+      height: 4.2rem;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -2rem;
+      left: 4rem;
     }
 }
 

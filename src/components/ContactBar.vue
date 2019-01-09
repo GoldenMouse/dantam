@@ -4,7 +4,7 @@
         <div class="contact-info">
             <div class="telephone">
                 <span>Call Us: </span>
-                <a href="#">(408) 271-8345</a>
+                <a href="tel:4085077178">(408) 507-7178</a>
             </div>
             <div class="hours">
                 <span>Opening Hours: </span>
