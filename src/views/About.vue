@@ -27,7 +27,7 @@
 
     <section class="testimonials">
         <TitleHeader title="Testimonials"></TitleHeader>
-        <agile :options="agileOptions" :speed=600 :autoplaySpeed=6000>
+        <agile :options="agileOptions" :speed=600 :autoplaySpeed=12000>
             <div class="slide">
                 <div class="card">
                   <div class="signature">Lisa C.</div>
@@ -68,7 +68,7 @@
             </div>
         </agile>
 
-        <agile :options="agileOptions" :speed=600 :autoplaySpeed=6000 class="agile--mobile">
+        <agile :options="agileOptions" :speed=600 :autoplaySpeed=12000 class="agile--mobile">
           <div class="slide">
                 <div class="card">
                     <div class="signature">Lisa C.</div>
@@ -360,10 +360,8 @@ export default {
     .testimonials blockquote {
         position: relative;
         font-style: italic;
-        color: var(--font-color-light);
-
-        
-       
+        color: var(--font-color);
+        a { text-decoration: underline; }
     }
     .testimonials .signature {
         border-right: 1px solid #d5d5d5;
