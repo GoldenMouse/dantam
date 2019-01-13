@@ -1,7 +1,7 @@
 <template>
 <div class="portfolio">
     <TitleHeader title="Portfolio">
-      New pictures are added frequently as my work grows!
+        New pictures are added frequently as my work grows. Organized by latest at the top. Please check back often to see my latest work!
     </TitleHeader>
 
     <nav id="portfolioNav" :class="{ nav: true, sticky: stickied }" ref="portfolioNav">
