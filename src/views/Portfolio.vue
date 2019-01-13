@@ -1,7 +1,7 @@
 <template>
 <div class="portfolio">
     <TitleHeader title="Portfolio">
-        Laboris aute tempor cupidatat qui velit dolor sint aliquip.Id ut pariatur non est ea nisi incididunt fugiat mollit aliqua in ullamco tempor.'
+      New pictures are added frequently as my work grows!
     </TitleHeader>
 
     <nav id="portfolioNav" :class="{ nav: true, sticky: stickied }" ref="portfolioNav">
