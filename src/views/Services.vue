@@ -60,19 +60,19 @@
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
-                            <div class="subitem--price">200</div>
+                            <div class="subitem--price">600</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup</p>
-                            <div class="subitem--price">100</div>
+                            <div class="subitem--price">300</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Hair</p>
-                            <div class="subitem--price">100</div>
+                            <div class="subitem--price">300</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Touch-ups</p>
-                            <div class="subitem--price">100 /hr</div>
+                            <div class="subitem--price">200 /hr</div>
                         </div>
                     </div>
 
@@ -82,15 +82,15 @@
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
-                            <div class="subitem--price">100</div>
+                            <div class="subitem--price">120</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup</p>
-                            <div class="subitem--price">50</div>
+                            <div class="subitem--price">60</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Hair</p>
-                            <div class="subitem--price">50</div>
+                            <div class="subitem--price">60</div>
                         </div>
                     </div> 
 
@@ -98,15 +98,15 @@
                         <div class="item--title">Trial</div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
-                            <div class="subitem--price">100</div>
+                            <div class="subitem--price">120</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup</p>
-                            <div class="subitem--price">50</div>
+                            <div class="subitem--price">60</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Hair</p>
-                            <div class="subitem--price">50</div>
+                            <div class="subitem--price">60</div>
                         </div>
                     </div>
 
@@ -114,15 +114,15 @@
                         <div class="item--title">Engagements</div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
-                            <div class="subitem--price">200</div>
+                            <div class="subitem--price">150</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup</p>
-                            <div class="subitem--price">100</div>
+                            <div class="subitem--price">75</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Hair</p>
-                            <div class="subitem--price">100</div>
+                            <div class="subitem--price">75</div>
                         </div>
                     </div>
 
@@ -130,15 +130,15 @@
                         <div class="item--title">Special Occasions</div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
-                            <div class="subitem--price">100</div>
+                            <div class="subitem--price">150</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup</p>
-                            <div class="subitem--price">50</div>
+                            <div class="subitem--price">75</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Hair</p>
-                            <div class="subitem--price">50</div>
+                            <div class="subitem--price">75</div>
                         </div>
                     </div>
                 </div>
@@ -203,7 +203,7 @@
 
               <div class="terms--item">
                 <div class="terms--subtitle">Deposit</div>
-                <p>A 20% deposit (client's total price) with contract is required to reserve dates (NON-REFUNDABLE and NON-TRANSFERABLE).</p>
+                <p>A 50% deposit (client's total price) with contract is required to reserve dates (NON-REFUNDABLE and NON-TRANSFERABLE).</p>
               </div>
 
               <div class="terms--item">
