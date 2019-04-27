@@ -2,15 +2,16 @@
 <div class="main-hero">
     <agile :options="agileOptions" :speed=600 :autoplaySpeed=6000>
         <div class="slide">
-            <!--
-            <div class="slide--caption">
+            <div class="slide--caption" id="slidecap1">
                 <div class="container">
-                    <h1>Creating Beauty With Every Touch</h1>
+                    <h1>Proud to serve Miss California 2019!</h1>
                     <div class="divider"></div>
-                    <p>Excepteur in est quis cupidatat enim laboris ea nisi. Nulla et aute sint aute qui ad. Dolore laboris incididunt sit ipsum velit. </p>
                 </div>
             </div>
-            -->
+            <div class="slide--main" :style="{'background-image': 'url(' + require('../assets/img/main-hero-0.jpg') + ')'}"></div>
+        </div>
+
+        <div class="slide">
             <div class="slide--main" :style="{
               'background-image': 'url(' + require('../assets/img/main-hero-1.jpg') + ')', 
               'background-position': '50% 40%'}"></div>
@@ -154,10 +155,10 @@ export default {
         }
 
         &--caption {
-            width: 25%;
+            width: 30%;
             position: absolute;
             left: 1rem;
-            top: 3rem;
+            top: 5rem;
             height: 15rem;
             background: none;
             border-radius: 1rem;
