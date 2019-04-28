@@ -60,19 +60,19 @@
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
-                            <div class="subitem--price">600</div>
+                            <div class="subitem--price">300</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup</p>
-                            <div class="subitem--price">300</div>
+                            <div class="subitem--price">150</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Hair</p>
-                            <div class="subitem--price">300</div>
+                            <div class="subitem--price">150</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Touch-ups</p>
-                            <div class="subitem--price">200 /hr</div>
+                            <div class="subitem--price">150 /hr</div>
                         </div>
                     </div>
 
@@ -114,15 +114,15 @@
                         <div class="item--title">Engagements</div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
-                            <div class="subitem--price">150</div>
+                            <div class="subitem--price">200</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup</p>
-                            <div class="subitem--price">75</div>
+                            <div class="subitem--price">100</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Hair</p>
-                            <div class="subitem--price">75</div>
+                            <div class="subitem--price">100</div>
                         </div>
                     </div>
 

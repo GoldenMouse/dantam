@@ -1,6 +1,6 @@
 <template>
 <div class="main-hero">
-    <agile :options="agileOptions" :speed=600 :autoplaySpeed=6000>
+    <agile :options="agileOptions" :speed=600 :autoplaySpeed=20000>
         <div class="slide">
             <div class="slide--caption" id="slidecap1">
                 <div class="container">
@@ -85,7 +85,7 @@ export default {
             width: 100%;
         }
         &__dots {
-            bottom: 3rem;
+            bottom: 2rem;
             left: 50%;
             position: absolute;
             transform: translateX(-50%);
@@ -94,8 +94,8 @@ export default {
         &__dot {
             button {
                 margin: 0.2rem;
-                width: 1rem; 
-                height: 1rem; 
+                width: 0.5rem; 
+                height: 0.5rem; 
                 border-radius: 50%;
                 border: 2px solid var(--color-bg-gray);
                 background-color: var(--color-bg-gray);

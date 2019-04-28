@@ -133,14 +133,15 @@ MEDIA QUERIES
     }
 
     #slidecap1 {
-      top: 75%;
-      left: 3rem;
+      top: 73%;
+      left: 2rem;
       width: 80%;
-      padding: 0.1rem;
+      padding: 0;
+      height: auto;
 
       h1 {
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 1.2rem;
+        font-weight: 800;
       }
 
       .divider {
