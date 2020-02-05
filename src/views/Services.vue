@@ -60,15 +60,15 @@
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
-                            <div class="subitem--price">300</div>
+                            <div class="subitem--price">400</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup</p>
-                            <div class="subitem--price">150</div>
+                            <div class="subitem--price">200</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Hair</p>
-                            <div class="subitem--price">150</div>
+                            <div class="subitem--price">200</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Touch-ups</p>
@@ -213,7 +213,7 @@
 
               <div class="terms--item">
                 <div class="terms--subtitle">Travel Fees</div>
-                <p>$1 per mile round trip (to location and back), from makeup studio.</p>
+                <p>$2 per mile round trip (to location and back), from makeup studio.</p>
               </div>
 
               <div class="terms--item">

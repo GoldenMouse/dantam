@@ -4,7 +4,7 @@
         <div class="slide">
             <div class="slide--caption" id="slidecap1">
                 <div class="container">
-                    <h1>Proud to serve Miss California 2019!</h1>
+                    <h1>Proud to serve Miss Vietnam California 2019!</h1>
                     <div class="divider"></div>
                 </div>
             </div>
