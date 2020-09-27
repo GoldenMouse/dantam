@@ -82,7 +82,7 @@
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
-                            <div class="subitem--price">120</div>
+                            <div class="subitem--price">175</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup</p>
@@ -130,7 +130,7 @@
                         <div class="item--title">Special Occasions</div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup &#43; Hair</p>
-                            <div class="subitem--price">150</div>
+                            <div class="subitem--price">200</div>
                         </div>
                         <div class="subitem">
                             <p class="subitem--name">Makeup</p>
